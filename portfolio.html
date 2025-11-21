@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/3921f12248.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images-logo.jpg" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Web Developer</p>
+                <h1>Hi, I'm <span>Abhishek </span><br>Kumar from Bihar</h1>
+            </div>
+        </div>
+    </div>
+    <!-- // About section  -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="picture.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I have completed my Bachelor's degree in Computer Applications (BCA) and 
+                       I am currently studying for my Master's in Computer Applications (MCA) at RIT.
+                       I work as a Full Stack Web Developer, with a strong interest and skill in front-end development. 
+                       I enjoy designing and building websites that are clean, easy to use, and work well on all devices.
+                       I use technologies like HTML, CSS, JavaScript, and React to create smooth and responsive web pages. 
+                       I'm always learning new things and love working on projects that help me grow and improve as a developer.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div> 
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI Development</span><br>Creating user-friendly web interfaces</li>
+                            <li><span>Web server Development</span><br>Managing servers and application performance</li>
+                            <li><span> Full Stack Web Development</span><br>Web App Development</li>
+                        </ul>
+                    </div>  
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2025 - Current</span><br>Internship at CodeAlpha</li>
+                            <li><span>2025 - Current</span><br>Internship at Unified Mentor</li>
+                        </ul>
+                    </div>  
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>BCA from LS Muzaffarpur</li>
+                            <li><span>2025 - Current</span><br>MCA from RIT Roorkee</li>
+                            <li><span>2025</span><br>Java online training from IIT Bombay</li>
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----- service section ------ -->
+
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI Development</h2>
+                    <p>"UI development" (User Interface development) refers to the process of designing 
+                        and building interfaces through which users interact with software applications. 
+                        It focuses on the look, feel, and interactivity of an application.</p>
+                    <a href="#">Learn more</a>    
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web server Development</h2>
+                    <p>Web server development involves creating the backend part of a web application 
+                        — the server that handles requests from users' browsers, processes data, 
+                        communicates with databases, and sends back responses (usually HTML, JSON, or files).</p>
+                    <a href="#">Learn more</a>    
+                </div>
+                   <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2> Full Stack Web Development</h2>
+                    <p>Web development is the process of building websites and web applications 
+                        that run in a browser or over the internet. It includes everything from 
+                        simple static pages to complex, data-driven applications.</p>
+                    <a href="#">Learn more</a>    
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- -------- portfolio --------- -->
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png" >
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The Website connects you to the talented people around the world</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png" >
+                    <div class="layer">
+                        <h3>Music Streaming App</h3>
+                        <p>The Website connects you to the talented people around the world</p>
+                        <a href="#"> <i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png" >
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The Website connects you to the talented people around the world</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+      </div>
+      <!-- --------- contact ---------  -->
+
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>vy4458431@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone-flip"></i>8986375923</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="Vivek-Resume.docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="your name" required>
+                        <input type="email" name="email" placeholder="your email" required>
+                        <textarea name="message" placeholder="your message" rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
